@@ -121,9 +121,9 @@ def FPI_fun_ex(exp, cmds=[]):
 
 def FPI_eval(fpstr):
     cmds = FPI_fun_ex(fpstr)
-    print cmds
+    #print cmds
     cmdline = '|'.join([reduce(lambda x,y: x+' '+y, cmd) for cmd in cmds])
-    print repr(cmdline)
+    #print repr(cmdline)
     CLI_eval(cmdline)
 
 
@@ -136,6 +136,16 @@ def counter(x=[-1]):
     return x[0]
 
 if __name__ == "__main__":
+    print '''\
+Lambash 0.1v -- lambash is lam[bda]-[ba]sh. (⇀‸↼‶)
+Type "exit" to exit.
+
+support pipe
+Functional Programming Interface
+    ps -ef | grep root | sort -n -f
+    sort(grep(grep(ps -ef, root), ku), -n, -f)
+    '''
+
     while True:
         print '\x1b[32m' + "In [%d]:" % counter() + '\x1b[39m',
         cmdline = raw_input()

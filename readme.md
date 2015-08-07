@@ -2,6 +2,8 @@
 
 lambash is lam[b<del>d</del>a]-[ba]sh. (⇀‸↼‶)
 
+![](https://raw.githubusercontent.com/leilux/lambash/master/screenshot.png)
+
 *Core Python Programming* Exercises 14.9
 
 *Shells*. Create a shell (operating system interface) program. Present a command-line interface that accepts operating system commands for execution (any platform).
